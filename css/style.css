@@ -39,6 +39,8 @@ a {
 }
 .navigation-list {
   display: flex;
+  align-content: flex-start;
+  align-items: center;
 }
 .slogan {
   padding-top: 0px;
@@ -137,6 +139,7 @@ body {
   line-height: 1.14;
   font-weight: 500;
 }
+
 .sup-header {
   margin-bottom: 30px;
   white-space: pre;
@@ -347,14 +350,12 @@ body {
 }
 .contacts {
   margin-right: 50px;
-}
-.contacts:last-child {
-  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
+.contacts:last-child {
+  margin: 0;
 }
 .butn {
   display: inline-block;
@@ -401,4 +402,26 @@ img {
 .team-text {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.icon1 {
+  fill: var(--text-secondary-color);
+  margin-right: 10px;
+}
+.icon1 :hover {
+  fill: var(--button-color);
+}
+.icon2 {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+.icon3 {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-bottom: 55px;
+  background-color: #757575;
+}
+.link :hover .icon1 {
+  fill: var(--button-color);
 }
