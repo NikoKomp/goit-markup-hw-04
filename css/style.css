@@ -42,18 +42,6 @@ a {
   align-content: flex-start;
   align-items: center;
 }
-.slogan {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background: var(--brand-color);
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-.hero {
-  background-color: var(--brand-color);
-}
-
 .advantage-section {
   padding-top: 94px;
   padding-bottom: 0px;
@@ -66,9 +54,11 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--brand-color);
+  display: flex;
 }
 .footer {
   background: var(--brand-color);
+  width: auto;
 }
 .card {
   padding-top: 94px;
@@ -83,7 +73,6 @@ a {
   color: var(--button-color);
 }
 body {
-  background-color: #e5e5e5;
   font-family: var(--primary-fonts), sans-serif;
   font-size: 14px;
   letter-spacing: 0.03;
@@ -138,6 +127,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .sup-header {
@@ -235,6 +226,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 .player:last-child {
   margin-right: 0px;
@@ -371,14 +363,10 @@ body {
 }
 .item {
   width: 370px;
-  margin-bottom: 30px;
   margin-right: 30px;
 }
-.item:nth-child(3n + 3) {
+.item:last-child {
   margin-right: 0px;
-}
-.item:nth-last-child(-n + 3) {
-  padding-bottom: 0px;
 }
 .item1:last-child {
   margin-right: 0px;
@@ -400,12 +388,14 @@ img {
   display: block;
 }
 .team-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .icon1 {
-  fill: var(--text-secondary-color);
+  fill: currentColor;
   margin-right: 10px;
+  vertical-align: middle;
 }
 .icon1 :hover {
   fill: var(--button-color);
@@ -416,12 +406,76 @@ img {
   margin-right: 10px;
 }
 .icon3 {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
+  background-color: var(--secondar-button-color);
+}
+.slogan {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(/image/фон.svg);
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  background-size: cover;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.social {
+  display: flex;
+  margin-top: 16px;
+  justify-content: space-between;
+}
+.social-link {
   display: flex;
   justify-content: center;
-  margin-right: auto;
-  margin-bottom: 55px;
-  background-color: #757575;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
 }
-.link :hover .icon1 {
-  fill: var(--button-color);
+.social-link :hover {
+  background-color: var(--button-color);
+}
+.icon4 {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #afb1b8;
+  fill: currentColor;
+}
+.icon5 {
+  width: 106px;
+  height: 60px;
+}
+.clients {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  width: 170px;
+  height: 90px;
+  border: 1px solid;
+  border-radius: 4px;
 }
