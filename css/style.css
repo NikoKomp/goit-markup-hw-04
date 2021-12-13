@@ -56,10 +56,6 @@ a {
   background: var(--brand-color);
   display: flex;
 }
-.footer {
-  background: var(--brand-color);
-  width: auto;
-}
 .card {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -432,16 +428,23 @@ img {
 .social {
   display: flex;
   margin-top: 16px;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
-.social-item :hover {
+.social-item :hover,
+.social-item :focus {
+  background-color: var(--button-color);
+}
+
+.social-item :hover .icon4,
+.social-item :focus .icon4 {
+  fill: white;
   background-color: var(--button-color);
 }
 
 .social-link {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -452,17 +455,17 @@ img {
   height: 20px;
   color: #afb1b8;
   fill: currentColor;
-
 }
-.icon4 :hover{
+.icon4 :hover {
+  fill: white;
   background-color: var(--button-color);
-fill: red
-
 }
-  
+
 .icon5 {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
+  border: none;
 }
 .clients {
   text-align: center;
@@ -481,7 +484,28 @@ fill: red
   align-items: center;
   color: #afb1b8;
   width: 170px;
-  height: 90px;
+  height: 92px;
   border: 1px solid;
   border-radius: 4px;
+}
+.border-clients :hover,
+.border-clients :focus {
+  border: 1px solid var(--button-color);
+}
+.border-clients :hover .icon5,
+.border-clients :focus .icon5 {
+  fill: var(--button-color);
+}
+.join {
+  color: var(--sup-head-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.foter-social {
+  margin-left: 70px;
+}
+footer {
+  display: flex;
 }
