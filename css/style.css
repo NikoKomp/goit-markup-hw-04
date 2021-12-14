@@ -55,6 +55,7 @@ a {
   padding-bottom: 60px;
   background: var(--brand-color);
   display: flex;
+  text-align: baseline ;
 }
 .card {
   padding-top: 94px;
@@ -411,8 +412,8 @@ img {
 }
 .slogan {
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(/image/фон.svg);
   max-width: 1600px;
@@ -487,6 +488,8 @@ img {
   height: 92px;
   border: 1px solid;
   border-radius: 4px;
+  background: #FFFFFF1A;
+
 }
 .border-clients :hover,
 .border-clients :focus {
@@ -503,9 +506,38 @@ img {
   font-size: 14px;
   line-height: 1.14;
 }
-.foter-social {
-  margin-left: 70px;
+.footer{
+  background-color: var(--brand-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-footer {
+.footer-box{
   display: flex;
+  align-items: baseline;
+}
+.box1{
+  margin-right: 70px;
+}
+.social-item :hover,
+.social-item :focus {
+  background-color: var(--button-color);
+}
+
+.social-item :hover .icon4,
+.social-item :focus .icon4 {
+  fill: white;
+  background-color: var(--button-color);
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+background-color: #FFFFFF1A;
+margin-right: 10px;
 }
