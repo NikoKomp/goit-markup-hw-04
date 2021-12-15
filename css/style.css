@@ -412,7 +412,9 @@ img {
   height: 16px;
   margin-right: 10px;
 }
-.icon3 {
+.adv-picture {
+  display: flex;
+  justify-content: space-between;
   width: 70px;
   height: 70px;
   margin-bottom: 30px;
@@ -425,7 +427,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(https://github.com/NikoKomp/goit-markup-hw-04/blob/main/image/fon.jpg?raw=true);
+    url(../image/fon.jpg);
   max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
